@@ -154,7 +154,7 @@ void setup() {
     _C4 = readRegister16(CMD_MS5611_PROM_C4);
     _C5 = readRegister16(CMD_MS5611_PROM_C5);
     _C6 = readRegister16(CMD_MS5611_PROM_C6);
-    // in production version, verify CDC...
+    // in production version, verify CRC...
 
     Serial.println("Values read:");    
     Serial.print("C1: "); Serial.println(_C1);
